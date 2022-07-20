@@ -19,14 +19,15 @@ function App() {
       setUser({
         name : details.name,
         email : details.email
-      })
+      });
     } else {
-      console.log("Details do not match")
+      console.log("Details do not match!");
+      setError("Detilas do not match!");
     }
   }
 
   const Logout = () => {
-    console.log("Logout");
+    setUser({ name:"", email:""});
   }
 
 
